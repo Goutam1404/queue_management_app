@@ -42,13 +42,10 @@ return (
     } py-5`}
   >
     <header
-      className={`text-center relative mb-2 transition-colors ${
+      className={`text-center mb-2 transition-colors ${
         isDark ? "text-white" : "text-violet-700 hover:text-violet-800"
       }`}
     >
-      <span className=" absolute top-20 right-0 md:top-10 md:right-10 mt-4 mr-4">
-        <ThemeToggler />
-      </span>
       <h1 className="font-bold text-4xl  transition-all duration-200 p-2">
         Queue Management Application
       </h1>
@@ -59,8 +56,11 @@ return (
         Manage your customers efficiently
       </p>
     </header>
+    <div className="flex justify-end px-10 md:px-15 mt-5">
+      <ThemeToggler />
+    </div>
 
-    <main className=" m-10 md:mx-15 h-max grid md:grid-cols-3 gap-10 duration-200 transition-all">
+    <main className=" my-5 mx-10 md:mx-15 h-max grid md:grid-cols-3 gap-10 duration-200 transition-all">
       <div className="max-w-full sm:w-xl md:col-span-1">
         <QueueForm onAdd={addToQueue} />
       </div>

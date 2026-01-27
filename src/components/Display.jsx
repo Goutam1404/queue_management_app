@@ -22,7 +22,7 @@ const Display = ({ queue, onUpdate , onRemove}) => {
         <div>
           {queue.length === 0 ? (
             <p className="text-center md:text-xl text-gray-500">
-              No customer data is there
+              No customer data is here
             </p>
           ) : (
             <div className="mt-5">
