@@ -15,7 +15,7 @@ const Display = ({ queue, onUpdate , onRemove}) => {
   return (
     <>
       <div
-        className={`p-6 rounded-xl  ${
+        className={`py-4 px-2 md:p-6 rounded-xl  ${
           isDark ? "bg-gray-950" : "bg-gray-700"
         } h-fit`}
       >
@@ -35,9 +35,10 @@ const Display = ({ queue, onUpdate , onRemove}) => {
                 <div
                   key={customer.id}
                   className={`${
-                    isDark ? "bg-gray-900" : "bg-gray-400"
-                  } h-fit mt-5 max-w-full p-3 flex  justify-between rounded `}
-                >
+                    isDark ? "bg-gray-800" : "bg-gray-400"
+                  } p-2 mt-4 flex flex-col sm:flex-row sm:justify-between sm:items-center rounded-lg `}
+                  >
+                  {/* h-fit mt-5 max-w-full p-3 flex justify-between rounded */}
                   <div className="my-2">
                     <div className="my-2 flex flex-row w-full gap-4 items-center ">
                       <span
